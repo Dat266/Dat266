@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai2</title>
+</head>
+<body>
+    
+
+    <script>
+
+        arr = [60, 40, 55, 75, 64]
+        function alternatingSums(a) {
+            let team1 = 0
+            let team2 = 0
+            a.forEach((current, index) => {
+                if (index % 2 == 0) {
+                    team1 = team1 + current
+
+                } else {
+                    team2 = team2 + current
+                }
+                console.log(team1 , team2);
+            })
+            return result = [team1, team2]
+        }
+
+        console.log(alternatingSums(arr));
+    </script>
+</body>
+</html>
